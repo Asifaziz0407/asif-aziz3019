@@ -534,7 +534,7 @@ document.getElementById('contact-mail-form').addEventListener('submit',async(e)=
   btn.textContent='Sending…';btn.disabled=true;
   successEl.classList.remove('show');successEl.style.background='';successEl.style.borderColor='';successEl.style.color='';
   try{
-    const res=await fetch('https://portfolio-backend-b6yi.onrender.com/send',{
+    const res=await fetch('https://portfolio-backend-1-0ckl.onrender.com/send',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({name,email,message})
